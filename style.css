@@ -1,3 +1,7 @@
+/* ---- ---- ---- */
+/* main structure */
+/* ---- ---- ---- */
+
 body {
     background-color: #000000;
     margin: 0px;
@@ -6,16 +10,25 @@ body {
     color: #b9b9b9;
 }
 
+.x_center,
+.y_center {
+    display: flex;
+    justify-content: center;
+}
+
+.content .y_center {
+    height: inherit;
+}
+
 table {
     /* background-color: green; */
     width: 100%;
-    /* padding: 0px; NOT WORKING */
 }
 
 .wrapper {
     display: flex;
     flex-flow: column;
-    background-color: red;
+    /* background-color: red; */
     width: 1000px;
     min-height: 100vh;
     text-align: center;
@@ -45,48 +58,74 @@ img.header {
     background-color: #282728;
 }
 
-img.content {
-    height: auto;
-    width: 260px;
-    float: center;
-}
+/* table.content {
+    position: absolute; top: 50%;
+    transform: translate(0, -50%);
+} */
 
 .footer {
     flex: 0 1 50px;
     width: 1000px;
 }
 
+/* ---- ---- ---- */
+/* media styling */
+/* ---- ---- ---- */
+
+img.content {
+    height: auto;
+    width: 260px;
+    float: center;
+}
+
+div.fade {
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+
+div.fade:hover {
+    transition: filter 0.3s linear;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); 
+}
+
+/* ---- ---- ---- */
+/* text styling */
+/* ---- ---- ---- */
+
 @font-face {
     font-family: Angars; src: url(./fonts/AngarsRunes.ttf);
 }
+
 @font-face {
     font-family: NordicaLight; src: url(./fonts/NordicaClassicLight.otf);
 }
+
 @font-face {
     font-family: NordicaUltraLight; src: url(./fonts/NordicaClassicUltraLight.otf)
 }
 
-
-h1,
-h2,
-h3 {
-    /* background-color: orange; */
-    margin: 0px;
+a:link, a:hover, a:active, a:visited  {
+    color: #b9b9b9;
+    text-decoration: none;
 }
 
 h1 {
+    margin: 0px 0px -15px 0px;
     font-family: Angars;
     font-size: 150px;
 }
 
 h2 {
+    margin: -15px 0px 0px 0px;
     font-family: NordicaLight;
     font-size: 36px;
-    /* font-style: italic; */
-    padding: 30px;
 }
 
-h3 {font-family: NordicaUltraLight;
-    font-size: 24px;
+h3 {
     padding: 10px;
+    margin: 0px;
+    font-family: NordicaUltraLight;
+    font-size: 24px;
 }
