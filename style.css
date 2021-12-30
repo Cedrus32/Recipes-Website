@@ -4,30 +4,71 @@ body {
     font-family: sans-serif;
     font-size: 12px;
     color: #b9b9b9;
-    text-align: center;
 }
 
 table {
+    /* background-color: green; */
     width: 100%;
+    /* padding: 0px; NOT WORKING */
 }
 
-.wrapper,
+.wrapper {
+    display: flex;
+    flex-flow: column;
+    background-color: red;
+    width: 1000px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.header,
 .footer {
     background-color: #1E1E1E;
 }
 
-.wrapper {
-    width: 1000px;
-    height: 100vh;
-    margin: 0px 0px -100px 0px;
+.header {
+    flex: 0 1 auto;
+}
+
+th.shrink {
+    width: 275px;
+}
+
+img.header {
+    height: auto;
+    width: inherit;
+    float: center;
 }
 
 .content {
+    flex: 1 1 auto;
     background-color: #282728;
-    height: 100vh;
+}
+
+img.content {
+    height: auto;
+    width: 260px;
+    float: center;
 }
 
 .footer {
-    height: 100px;
+    flex: 0 1 50px;
     width: 1000px;
+}
+
+h1,
+h2 {
+    /* background-color: orange; */
+    margin: 0px;
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 36px;
+    font-style: italic;
+    padding: 30px;
 }

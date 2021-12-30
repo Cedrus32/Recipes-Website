@@ -1,0 +1,71 @@
+body {
+    background-color: #000000;
+    font-size: 12px;
+}
+
+div {
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrapper {
+    width: 1000px;
+    /* position:;*/
+    min-height: 100%;    /* NOT WORKING */
+    margin: -100 auto 0 auto;    /* NOT WORKING */
+    font-family: sans-serif;
+    color: #b9b9b9;
+    text-align: center;
+}
+
+.title,
+.footer {
+    background-color: #1E1E1E;
+}
+
+.content {
+    background-color: #282728;
+}
+
+table {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.title {
+    height: 100px;
+}
+
+table.title {
+    float: right;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 18 px;
+    font-weight: bold;
+}
+
+.content .home {
+    float: center;
+}
+
+.content .recipe {
+    float: right;
+}
+
+.footer {
+    height: 100px;
+    width: 1000px;
+}
