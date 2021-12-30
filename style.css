@@ -56,19 +56,37 @@ img.content {
     width: 1000px;
 }
 
+@font-face {
+    font-family: Angars; src: url(./fonts/AngarsRunes.ttf);
+}
+@font-face {
+    font-family: NordicaLight; src: url(./fonts/NordicaClassicLight.otf);
+}
+@font-face {
+    font-family: NordicaUltraLight; src: url(./fonts/NordicaClassicUltraLight.otf)
+}
+
+
 h1,
-h2 {
+h2,
+h3 {
     /* background-color: orange; */
     margin: 0px;
-    font-weight: lighter;
 }
 
 h1 {
-    font-size: 100px;
+    font-family: Angars;
+    font-size: 150px;
 }
 
 h2 {
+    font-family: NordicaLight;
     font-size: 36px;
-    font-style: italic;
+    /* font-style: italic; */
     padding: 30px;
+}
+
+h3 {font-family: NordicaUltraLight;
+    font-size: 24px;
+    padding: 10px;
 }
