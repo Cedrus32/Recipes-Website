@@ -1,12 +1,11 @@
 /* ---- ---- ---- */
-/* main structure */
+/* MAIN STRUCTURE */
 /* ---- ---- ---- */
 
 body {
     background-color: #000000;
-    margin: 0px;
-    font-family: sans-serif;
-    font-size: 12px;
+    font-family: "NordicaUltraLight", sans-serif;
+    font-size: 14px;
     color: #b9b9b9;
 }
 
@@ -16,19 +15,24 @@ body {
     justify-content: center;
 }
 
-.content .y_center {
-    height: inherit;
+body,
+table,
+td,
+td.header_pic,
+.wrapper,
+.header,
+.footer {
+    padding: 0px;
+    margin: 0px;
 }
 
 table {
-    /* background-color: green; */
     width: 100%;
 }
 
 .wrapper {
     display: flex;
     flex-flow: column;
-    /* background-color: red; */
     width: 1000px;
     min-height: 100vh;
     text-align: center;
@@ -43,25 +47,15 @@ table {
     flex: 0 1 auto;
 }
 
-th.shrink {
-    width: 275px;
-}
-
-img.header {
-    height: auto;
-    width: inherit;
-    float: center;
-}
-
 .content {
+    margin: 77px, 0px, 77px, 0px;
     flex: 1 1 auto;
     background-color: #282728;
 }
 
-/* table.content {
-    position: absolute; top: 50%;
-    transform: translate(0, -50%);
-} */
+td.header_pic {
+    width: 275px;
+}
 
 .footer {
     flex: 0 1 50px;
@@ -69,8 +63,65 @@ img.header {
 }
 
 /* ---- ---- ---- */
-/* media styling */
+/* HOME STRUCTURE */
 /* ---- ---- ---- */
+
+/* USES MAIN STRUCTURE */
+
+/*  ---- ---- ----  */
+/* RECIPE STRUCTURE */
+/*  ---- ---- ----  */
+
+.recipe_box,
+td.recipe_pic,
+.recipe_text,
+.recipe_lists,
+.recipe_item,
+.ingredients {
+    padding: 0px;
+    margin: 0px;
+}
+
+.recipe_box {
+    position: relative; top: 79px;
+    height: auto;
+    width: 1000px;
+}
+
+td.recipe_pic {
+    width: 331px;
+}
+
+td.recipe_text {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.recipe_lists {
+    display: flex;
+    flex-flow: row;
+}
+
+.recipe_item {
+    display: flex;
+    flex-flow: column;
+}
+
+.ingredients {
+    width: 200px;
+}
+
+/* ---- ---- ---- */
+/*  MEDIA STYLING */
+/* ---- ---- ---- */
+
+img.header {
+    height: auto;
+    width: inherit;
+    float: center;
+}
 
 img.content {
     height: auto;
@@ -91,7 +142,7 @@ div.fade:hover {
 }
 
 /* ---- ---- ---- */
-/* text styling */
+/*  TEXT STYLING  */
 /* ---- ---- ---- */
 
 @font-face {
@@ -117,15 +168,37 @@ h1 {
     font-size: 150px;
 }
 
-h2 {
-    margin: -15px 0px 0px 0px;
-    font-family: NordicaLight;
+h2,
+h3 {
+    font-family: "NordicaLight";
     font-size: 36px;
 }
 
-h3 {
+h2 {
+    margin: -15px 0px 0px 0px;
+}
+
+h3,
+h5 {
+    text-align: left;
+}
+
+h4 {
     padding: 10px;
     margin: 0px;
-    font-family: NordicaUltraLight;
+    font-family: "NordicaLight";
     font-size: 24px;
+    font-weight: lighter;
+}
+
+h5 {
+    margin: 0px 0px -10px 0px;
+    font-family: "NordicaUltraLight";
+    font-size: 18px;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+    text-align: left;
 }
