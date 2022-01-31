@@ -1,3 +1,5 @@
-# odin-recipes
-first project to create a recipes website
+# Recipes Website
+
+Completed through The Odin Project
+
 https://cedrus32.github.io/odin-recipes/
